@@ -6,14 +6,10 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class BookingDemoApplication extends SpringBootServletInitializer {
+public class BookingDemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(BookingDemoApplication.class, args);
+        SpringApplication.run(BookingDemoApplication.class);
     }
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-        return builder.sources(BookingDemoApplication.class);
-    }
 }
